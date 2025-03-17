@@ -68,11 +68,26 @@ body {
     color: #fff;
     margin-left: 22px;
     text-decoration: none;
+    font-size: 18px;
 }
 
-.profile-icon img {
+.profile-wrapper {
+    display: flex;
+    align-items: center;
+    margin-left: 22px;
+    cursor: pointer;
+}
+
+.profile-image {
     height: 32px;
-    border-radius: 4px;
+    width: 32px;
+    cursor: pointer;
+}
+
+.profile-wrapper i {
+    margin-left: 5px;
+    font-size: 12px;
+    color: #fff;
 }
 
 /* Hero Banner Section */
@@ -80,6 +95,7 @@ body {
     position: relative;
     height: 80vh;
     overflow: hidden;
+    margin-bottom: -100px;
 }
 
 .banner-image {
@@ -150,10 +166,39 @@ body {
     margin-right: 10px;
 }
 
+.see-again-section {
+    position: absolute;
+    bottom: 15%;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    padding: 0 4%;
+}
+
+.see-again-button {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.2vw;
+    margin-bottom: 15px;
+}
+
+.see-again-button i {
+    margin-left: 5px;
+    font-size: 0.8vw;
+}
+
 /* Content Row Styles */
 .content-row {
     padding: 0 4%;
     margin-bottom: 40px;
+    position: relative;
+    z-index: 5;
+}
+
+.see-again-row {
+    margin-top: 50px;
 }
 
 .row-header {
