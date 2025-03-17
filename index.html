@@ -5,102 +5,211 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Netflix</title>
     <link rel="stylesheet" href="style.css">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <div>
-        <section>
-            <header>
-                <div class="flex"><img id="netflix-logo" src="NetflixLogoSvg.png" alt=""><p id="navbar">Start Shows Movies New MyList</p></div>
-          
-            </header>
-            <div class="flex2" ><img id="logo" src="Netflix_Symbol_RGB 1.png" alt=""><p id="show">SHOW</p></div>
-            <div class="flex3"><h4 id="maid">MAID</h4></div>
-          
-            <img class="banner-image" src="Title-Image.png" alt="">
-        </section>
-    </div>
-    <div><p class="name-1">See Again &#129122</p>
-        <section class="section-1"><img src="section 1.1.png" alt=""width="100%">
-         <img src="section 1.2.png" alt=""width="100%">
-         <img src="section 1.3.png" alt=""width="100%">
-         <img src="section 1.4.png" alt=""width="100%">
-         <img src="section 1.5.png" alt=""width="100%">       
-        </section>
-        </div>
-        <br>
-        <div>
-            <p class="name-2">Top 10 in your country &#129122</p>
-            <section class="section-2">
-                <img src="Rank - 01.png" alt=""width="100%">
-                <img src="section 2.1.png" alt=""width="100%">
-                <img src="Rank - 02.png" alt=""width="100%">
-                <img src="section 2.2.png" alt=""width="100%">
-                <img src="Rank - 03.png" alt=""width="100%">
-                <img src="section 2.3.png" alt=""width="100%">
-                <img src="Rank - 04.png" alt=""width="100%">
-                <img src="section 2.4.png" alt=""width="100%">
-                <img src="Rank - 05.png" alt=""width="100%">
-                <img src="section 2.5.png" alt=""width="100%">
-            </section>
-        </div>
-        <br>
-        <div>
-            <p class="name-3">Trending now &#129122</p>
-            <section class="section-3">
-                <img src="section 3.1.png" alt=""width="100%">
-                <img src="section 3.2.png" alt=""width="100%">
-                <img src="section 3.3.png" alt=""width="100%">
-                <img src="section 3.4.png" alt=""width="100%">
-                <img src="section 3.5.png" alt=""width="100%">
-            </section>
-        </div>
-        <br>
-        <div>
-            <p class="name-4">Sci-fi shows &#129122</p>
-            <section class="section-4">
-                <img src="section 4.1.png" alt=""width="100%">
-                <img src="section 4.2.png" alt=""width="100%">
-                <img src="section 4.3.png" alt=""width="100%">
-                <img src="section 4.4.png" alt=""width="100%">
-                <img src="section 4.5.png" alt=""width="100%">
-            </section>
+    <div class="main-container">
+        <!-- Header Section -->
+        <header class="navbar">
+            <div class="nav-left">
+                <img id="netflix-logo" src="NetflixLogoSvg.png" alt="Netflix">
+                <ul class="nav-links">
+                    <li><a href="#">Start</a></li>
+                    <li><a href="#">Shows</a></li>
+                    <li><a href="#">Movies</a></li>
+                    <li><a href="#">New</a></li>
+                    <li><a href="#">My List</a></li>
+                </ul>
+            </div>
+            <div class="nav-right">
+                <a href="#"><i class="fas fa-search"></i></a>
+                <a href="#"><i class="fas fa-bell"></i></a>
+                <a href="#" class="profile-icon">
+                    <img src="profile.png" alt="Profile">
+                </a>
+            </div>
+        </header>
+
+        <!-- Hero Banner Section -->
+        <section class="hero-banner">
+            <div class="banner-content">
+                <div class="show-tag">
+                    <img class="netflix-icon" src="Netflix_Symbol_RGB 1.png" alt="">
+                    <span>SHOW</span>
                 </div>
-                <br>
-                <footer>
-                    <div>
-                        <section class="section-5">
-                            <img src="facebook.png" alt=""width="2%">
-                            <img src="instagram.png" alt=""width="2%">
-                            <img src="twitter.png" alt=""width="2%">
-                            <img src="youtube.png" alt=""width="2%">
-                           
-                        </section> 
-                        <section class="section-6">
-                            <p class="p1">Seslendirme ve Alt Yazi </p>
-                            <p class="p2">Medya Merkezi</p>
-                            <p class="p3">Gizlilik </p>
-                            <p class="p4">Bize Ulasin</p>
-                             
-                            <input class="check" type="email" value="Hizmet Kodu">
-                            <p class="p5">@ 1997 2021 Netflix.Inc @ 082657425at23</p>
-                        </section>
-                        <section class="section-7">
-                            <p class="t1">Sesmi Betimleme</p>
-                            <p class="t1">Yatirmci iliskileri</p>
-                            <p class="t1">Yasal Hukumer</p>
-                        </section>
-                        <section class="section-8">
-                            <p class="t2">Yardum Merkezi</p>
-                            <p class="t2">Is Imkalari</p>
-                            <p class="t2">cerec Tercihlari</p>
-                        </section>
-                         <section class="section-9">
-                            <p class="t3">Hediye Kartalari</p>
-                            <p class="t3">Kullanim Korsullari</p>
-                            <p class="t3">Kurunsam Bilirgiler</p>
-                         </section>
-                     </div>
-                </footer>
+                <h1 class="show-title">MAID</h1>
+                <div class="action-buttons">
+                    <button class="btn play-btn"><i class="fas fa-play"></i> Play</button>
+                    <button class="btn info-btn"><i class="fas fa-info-circle"></i> More Info</button>
+                </div>
+            </div>
+            <img class="banner-image" src="Title-Image.png" alt="Maid">
+        </section>
+
+        <!-- See Again Section -->
+        <section class="content-row">
+            <div class="row-header">
+                <h2>See again <i class="fas fa-chevron-right"></i></h2>
+            </div>
+            <div class="row-items">
+                <div class="title-card">
+                    <img src="section 1.1.png" alt="">
+                    <div class="new-episodes-tag">NEW EPISODES</div>
+                </div>
+                <div class="title-card">
+                    <img src="section 1.2.png" alt="">
+                </div>
+                <div class="title-card">
+                    <img src="section 1.3.png" alt="">
+                </div>
+                <div class="title-card">
+                    <img src="section 1.4.png" alt="">
+                </div>
+                <div class="title-card">
+                    <img src="section 1.5.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <!-- Top 10 Section -->
+        <section class="content-row">
+            <div class="row-header">
+                <h2>Top 10 in your country <i class="fas fa-chevron-right"></i></h2>
+            </div>
+            <div class="row-items top-10-row">
+                <div class="title-card top-10-card">
+                    <div class="rank-number">
+                        <img src="Rank - 01.png" alt="1">
+                    </div>
+                    <div class="title-image">
+                        <img src="section 2.1.png" alt="">
+                    </div>
+                </div>
+                <div class="title-card top-10-card">
+                    <div class="rank-number">
+                        <img src="Rank - 02.png" alt="2">
+                    </div>
+                    <div class="title-image">
+                        <img src="section 2.2.png" alt="">
+                    </div>
+                </div>
+                <div class="title-card top-10-card">
+                    <div class="rank-number">
+                        <img src="Rank - 03.png" alt="3">
+                    </div>
+                    <div class="title-image">
+                        <img src="section 2.3.png" alt="">
+                    </div>
+                </div>
+                <div class="title-card top-10-card">
+                    <div class="rank-number">
+                        <img src="Rank - 04.png" alt="4">
+                    </div>
+                    <div class="title-image">
+                        <img src="section 2.4.png" alt="">
+                    </div>
+                </div>
+                <div class="title-card top-10-card">
+                    <div class="rank-number">
+                        <img src="Rank - 05.png" alt="5">
+                    </div>
+                    <div class="title-image">
+                        <img src="section 2.5.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Trending Now Section -->
+        <section class="content-row">
+            <div class="row-header">
+                <h2>Trending now <i class="fas fa-chevron-right"></i></h2>
+            </div>
+            <div class="row-items">
+                <div class="title-card">
+                    <img src="section 3.1.png" alt="">
+                    <div class="new-episode-tag">NEW EPISODE</div>
+                </div>
+                <div class="title-card">
+                    <img src="section 3.2.png" alt="">
+                </div>
+                <div class="title-card">
+                    <img src="section 3.3.png" alt="">
+                    <div class="new-episodes-tag">NEW EPISODES</div>
+                </div>
+                <div class="title-card">
+                    <img src="section 3.4.png" alt="">
+                </div>
+                <div class="title-card">
+                    <img src="section 3.5.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <!-- Sci-fi Shows Section -->
+        <section class="content-row">
+            <div class="row-header">
+                <h2>Sci-fi shows <i class="fas fa-chevron-right"></i></h2>
+            </div>
+            <div class="row-items">
+                <div class="title-card">
+                    <img src="section 4.1.png" alt="">
+                </div>
+                <div class="title-card">
+                    <img src="section 4.2.png" alt="">
+                </div>
+                <div class="title-card">
+                    <img src="section 4.3.png" alt="">
+                </div>
+                <div class="title-card">
+                    <img src="section 4.4.png" alt="">
+                </div>
+                <div class="title-card">
+                    <img src="section 4.5.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer Section -->
+        <footer>
+            <div class="social-links">
+                <a href="#"><img src="facebook.png" alt="Facebook"></a>
+                <a href="#"><img src="instagram.png" alt="Instagram"></a>
+                <a href="#"><img src="twitter.png" alt="Twitter"></a>
+                <a href="#"><img src="youtube.png" alt="YouTube"></a>
+            </div>
+            
+            <div class="footer-links">
+                <div class="footer-column">
+                    <a href="#">Seslendirme ve Alt Yazi</a>
+                    <a href="#">Medya Merkezi</a>
+                    <a href="#">Gizlilik</a>
+                    <a href="#">Bize Ulasin</a>
+                    <div class="service-code">
+                        <button>Hizmet Kodu</button>
+                    </div>
+                    <p class="copyright">© 1997-2021 Netflix, Inc. (082657425at23)</p>
+                </div>
+                
+                <div class="footer-column">
+                    <a href="#">Sesmi Betimleme</a>
+                    <a href="#">Yatirmci iliskileri</a>
+                    <a href="#">Yasal Hukumer</a>
+                </div>
+                
+                <div class="footer-column">
+                    <a href="#">Yardum Merkezi</a>
+                    <a href="#">Is Imkalari</a>
+                    <a href="#">Cerec Tercihlari</a>
+                </div>
+                
+                <div class="footer-column">
+                    <a href="#">Hediye Kartalari</a>
+                    <a href="#">Kullanim Korsullari</a>
+                    <a href="#">Kurunsam Bilirgiler</a>
+                </div>
+            </div>
+        </footer>
+    </div>
 </body>
 </html>
